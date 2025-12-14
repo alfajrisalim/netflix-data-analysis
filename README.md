@@ -1,44 +1,44 @@
-# netflix-data-analysis
+Netflix Data Analysis
 
-Netflix merupakan salah satu platform streaming terbesar di dunia yang menawarkan ribuan konten film dan serial dari berbagai negara. Dataset yang digunakan dalam proyek ini berisi informasi detail mengenai setiap konten—mulai dari judul, sutradara, negara asal, tahun rilis, hingga genre.
+Netflix is one of the largest streaming platforms in the world, offering thousands of movies and TV shows from various countries. The dataset used in this project contains detailed information about each title—ranging from title, director, country of origin, release year, to genre.
 
-Tujuan dari analisis ini adalah untuk:
+The objectives of this analysis are to:
 
-Memahami distribusi konten berdasarkan jenis (Movie/TV Show), tahun rilis, negara, rating, dan genre.
+Understand the distribution of content based on type (Movie/TV Show), release year, country, rating, and genre
 
-Mengidentifikasi tren penambahan konten dari waktu ke waktu.
+Identify trends in content additions over time
 
-Melakukan eksplorasi mendalam mengenai karakteristik Movie & TV Show di Netflix.
+Perform in-depth exploration of the characteristics of Movies and TV Shows on Netflix
 
-Menghasilkan insight strategis terkait pola dan preferensi konten Netflix secara global.
+Generate strategic insights related to global content patterns and preferences on Netflix
 
 📌 Data Understanding & Cleaning
 
-Pada tahap awal dilakukan beberapa proses untuk memahami dan mempersiapkan data:
+In the initial stage, several steps were performed to understand and prepare the data:
 
-✔ Memeriksa struktur data (df.info())
+✔ Data Structure Check (df.info())
 
-Dataset berisi 8.807 baris dan 12 kolom.
+The dataset contains 8,807 rows and 12 columns
 
-Beberapa kolom penting berupa teks: title, director, cast, country, listed_in.
+Several important columns are text-based, such as title, director, cast, country, and listed_in
 
-Kolom tanggal seperti date_added membutuhkan konversi ke datetime.
+Date-related columns such as date_added require conversion to datetime format
 
-✔ Memeriksa nilai unik (df.nunique())
+✔ Unique Value Inspection (df.nunique())
 
-Hasil pengamatan awal:
+Initial observations include:
 
-4.528 sutradara berbeda → menunjukkan keberagaman kreator.
+4,528 unique directors, indicating high creator diversity
 
-7.692 aktor terlibat dalam berbagai konten.
+7,692 actors involved across different titles
 
-748 negara tercatat → Netflix benar-benar global.
+748 countries represented, highlighting Netflix’s global reach
 
-17 kategori rating → digunakan untuk segmentasi umur dan regulasi konten.
+17 rating categories, used for age segmentation and content regulation
 
-✔ Menangani Missing Value
+✔ Handling Missing Values
 
-Beberapa kolom memiliki missing values cukup besar, terutama:
+Several columns contain a significant number of missing values, particularly:
 
 director
 
@@ -52,56 +52,24 @@ rating
 
 duration
 
-Missing value ditangani dengan pendekatan:
+Missing values were handled using the following approach:
 
-Tetap dibiarkan "Unknown" untuk kolom kategori → tidak merusak distribusi.
+Category-based columns were labeled as "Unknown" to preserve distribution
 
-date_added dikonversi menjadi datetime dan missing tidak dipaksakan.
+date_added was converted to datetime, and missing values were not forcibly imputed
 
 📌 Dataset Overview
 
-Dataset terdiri dari:
+The dataset consists of:
 
-8.807 baris
+8,807 rows
 
-12 kolom
+12 columns
 
-Konten dibagi menjadi Movie dan TV Show
+Content categorized into Movies and TV Shows
 
-Rentang tahun rilis: 1925 → 2021
+Release year range: 1925 – 2021
 
-📌 Insight penting:
-Dataset ini tidak memiliki konten rilis di atas tahun 2021, sehingga tren yang dianalisis hanya berlaku hingga 2021.
-Artinya, perubahan strategi Netflix pada 2022–2025 tidak tercakup, dan interpretasi harus mempertimbangkan hal ini.
+📌 Important Note:
 
-📌 Rekomendasi Perbaikan (Supaya Portofolio Semakin Profesional)
-
-✔ Tambahkan visualisasi distplot/histogram untuk tahun rilis.
-✔ Tambahkan barplot untuk Movie vs TV Show.
-✔ Lakukan Top Countries analysis (10 besar negara paling produktif).
-✔ Lakukan WordCloud untuk genre (opsional tapi menarik di GitHub).
-✔ Buat section Key Insights & Conclusion.
-
-🎯 Key Insights 
-
-International Movies mendominasi genre → menunjukkan fokus Netflix pada pasar global.
-
-Kids TV hanya berjumlah < 500 konten → Netflix lebih banyak menyediakan konten dewasa dan keluarga, bukan fokus anak.
-
-Tren rilis meningkat tajam setelah 2015 → sejalan dengan ekspansi global Netflix.
-
-Countries sangat beragam (748 negara) → bukti kuat bahwa Netflix bukan hanya Hollywood-centric.
-
-Rating TV-MA mendominasi → konten dewasa paling banyak ditonton sehingga produksinya paling besar.
-
-🏁 Conclusion
-
-Analisis ini memberikan gambaran menyeluruh mengenai konten Netflix. Dari hasil eksplorasi data, dapat disimpulkan:
-
-Netflix menargetkan pasar global, terlihat dari keberagaman negara dan dominasi International Movies.
-
-Konten dewasa (TV-MA) dan genre Drama/Comedy merupakan yang paling banyak diproduksi.
-
-Dataset menunjukkan peningkatan konten signifikan setelah 2015, mencerminkan ekspansi agresif Netflix.
-
-Dataset terbatas hingga 2021 sehingga perlu sumber lain jika ingin melihat tren terbaru.
+This dataset does not include content released after 2021. Therefore, all trends analyzed are limited to data up to 2021. Any changes in Netflix’s strategy from 2022–2025 are not captured and should be interpreted with caution.
