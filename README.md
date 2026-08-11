@@ -28,6 +28,10 @@ The catalog also shows substantial diversity across genres, ratings, actors, and
 
 Overall, the analysis provides an overview of Netflix's content composition, geographic distribution, genre preferences, and content acquisition trends over time.
 
+## Power BI Dashboard
+
+![Netflix Dashboard](dashboardnetflix.png)
+
 📌 Data Understanding & Cleaning
 
 In the initial stage, several steps were performed to understand and prepare the data:
