@@ -1,4 +1,4 @@
-Netflix Data Analysis
+## Netflix Data Analysis
 
 Netflix is one of the largest streaming platforms in the world, offering thousands of movies and TV shows from various countries. The dataset used in this project contains detailed information about each title—ranging from title, director, country of origin, release year, to genre.
 
