@@ -12,6 +12,22 @@ Perform in-depth exploration of the characteristics of Movies and TV Shows on Ne
 
 Generate strategic insights related to global content patterns and preferences on Netflix
 
+## Key Insights
+
+- **Movies dominate the catalog (~70%)**, significantly exceeding TV Shows.
+- **Content additions increased substantially between 2015–2019**, reflecting Netflix's rapid content expansion during this period.
+- **The United States and India are the largest content contributors**, highlighting the importance of these markets in Netflix's global catalog.
+- **Drama and International Movies are among the dominant genres**, reflecting Netflix's broad international content strategy.
+- **Missing country information is present in the dataset**, indicating limitations in metadata completeness, particularly for older content.
+
+## Conclusion
+
+The analysis shows that Netflix's catalog is dominated by Movies and internationally oriented content, with Drama and International Movies representing major genre categories. Content additions increased substantially during 2015–2019, while the United States and India emerged as the largest content contributors.
+
+The catalog also shows substantial diversity across genres, ratings, actors, and directors. Adult-oriented ratings such as TV-MA and TV-14 are prominent, while children's content represents a smaller segment of the catalog.
+
+Overall, the analysis provides an overview of Netflix's content composition, geographic distribution, genre preferences, and content acquisition trends over time.
+
 📌 Data Understanding & Cleaning
 
 In the initial stage, several steps were performed to understand and prepare the data:
